@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    /* padding: 0; */
+    margin: 2px;
+    border: 1px solid blue;
+}
+
+html {
+    font-size: 1em;
+    min-width: 360px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body>div:nth-child(1){
+    background-color: rgb(216, 236, 252);
+    padding: 20px 50px;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.message-box{
+    background-color: #fff;
+}
+.message-box>div:nth-child(1){
+    display: flex;
+}
+.message-box>div:nth-child(1)>img:nth-of-type(1){
+    width: 48px;
+}

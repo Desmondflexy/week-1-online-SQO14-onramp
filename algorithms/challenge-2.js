@@ -4,6 +4,4 @@ function fizzBuzz(input) {
     else if (input % 5 === 0) return 'buzz';
     else return input;
 }
-
-console.log(fizzBuzz(15));
 module.exports = fizzBuzz

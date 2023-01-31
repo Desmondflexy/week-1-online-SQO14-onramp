@@ -7,5 +7,4 @@ function countTruthy(arr) {
     }
     return k;
 }
-console.log(countTruthy(['', 0, 0, undefined, 7]));
 module.exports = countTruthy
