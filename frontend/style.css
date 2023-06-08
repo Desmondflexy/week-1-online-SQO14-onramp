@@ -1,35 +1,106 @@
 * {
-    box-sizing: border-box;
-    /* padding: 0; */
-    margin: 2px;
-    /* border: 1px solid blue; */
+  box-sizing: border-box;
+  /* padding: 0; */
+  /* margin: 2px; */
+  /* border: 1px solid blue; */
 }
 
 html {
-    font-size: 1em;
-    min-width: 360px;
+  font-size: 1em;
+  min-width: 360px;
 }
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: helvetica, sans-serif;
 }
 
-body>div:nth-child(1){
-    background-color: rgb(216, 236, 252);
-    padding: 20px 50px;
+section {
+  padding: 20px 60px;
+  /* border: 1px solid firebrick; */
 }
-.container{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+
+section:first-child {
+  background-color: aliceblue;
 }
-.message-box{
-    background-color: #fff;
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  align-items: flex-start;
 }
-.message-box>div:nth-child(1){
-    display: flex;
+
+.message-box {
+  background-color: #fff;
+  padding: 20px;
+  color: grey;
+  border-radius: 6px;
+  max-width: 600px;
 }
-.message-box>div:nth-child(1)>img:nth-of-type(1){
-    width: 48px;
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+.message-box > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.username > * {
+  margin: 0;
+}
+
+.username > p:first-child {
+  font-weight: 700;
+  color: #000;
+}
+
+.message-box > * {
+  width: 250px;
+}
+
+.message-box img:last-child {
+  width: 28px;
+}
+
+.message-box > div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-box > div:last-child div {
+  display: flex;
+  align-items: center;
+}
+
+.like {
+  color: red;
+  font-size: 24px;
+  display: inline-block;
+  margin: 4px;
+}
+
+section:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.pricing{
+  border: 2px solid rgb(255, 166, 0);
+  border-radius: 8px;
+  padding: 20px;
+  color: grey;
 }
