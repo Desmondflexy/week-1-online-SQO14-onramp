@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
   /* padding: 0; */
-  /* margin: 2px; */
-  /* border: 1px solidz blue; */
+  /* margin: 10px; */
+  /* border: 1px solid blue; */
 }
 
 html {
@@ -18,17 +18,19 @@ body {
 
 section {
   padding: 20px 60px;
-  /* border: 1px solid firebrick; */
 }
 
 section:nth-child(1) {
   background-color: aliceblue;
-  width: 100%;
 }
 
-section:nth-child(1)>div{
+section>div{
   max-width: 1000px;
   margin: auto;
+}
+
+section:nth-child(2)>div{
+  max-width: 400px;
 }
 
 .container {
@@ -43,7 +45,6 @@ section:nth-child(1)>div{
   padding: 20px;
   color: grey;
   border-radius: 6px;
-  /* max-width: 600px; */
   flex: 1;
 }
 
@@ -74,10 +75,6 @@ section:nth-child(1)>div{
   color: #000;
 }
 
-.message-box > * {
-  /* width: 250px; */
-}
-
 .message-box img:last-child {
   width: 28px;
 }
@@ -99,11 +96,12 @@ section:nth-child(1)>div{
   margin: 4px;
 }
 
-section:nth-child(2){
-  /* display: flex;
-  flex-direction: column; */
-  max-width: 600px;
-  margin: auto;
+section>div>p{
+  color: grey;
+}
+
+.center {
+  text-align: center;
 }
 
 .pricing{
@@ -112,6 +110,11 @@ section:nth-child(2){
   padding: 20px;
   color: grey;
   background-color: beige;
+}
+
+.pricing>p{
+  font-size: 20px;
+  margin: 2px 0;
 }
 
 .pricing span:nth-child(1){
@@ -127,4 +130,22 @@ section:nth-child(2){
   border-radius: 4px;
   padding: 10px;
   border: none;
+}
+
+.pricing button:hover{
+  background-color: rgb(7, 36, 69);
+}
+
+.pricing button:active{
+  background-color: rgb(67, 67, 213);
+}
+
+.pricing ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing li{
+  list-style-image: url(green-tick.png);
 }
