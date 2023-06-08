@@ -2,7 +2,7 @@
   box-sizing: border-box;
   /* padding: 0; */
   /* margin: 2px; */
-  /* border: 1px solid blue; */
+  /* border: 1px solidz blue; */
 }
 
 html {
@@ -21,8 +21,14 @@ section {
   /* border: 1px solid firebrick; */
 }
 
-section:first-child {
+section:nth-child(1) {
   background-color: aliceblue;
+  width: 100%;
+}
+
+section:nth-child(1)>div{
+  max-width: 1000px;
+  margin: auto;
 }
 
 .container {
@@ -37,7 +43,8 @@ section:first-child {
   padding: 20px;
   color: grey;
   border-radius: 6px;
-  max-width: 600px;
+  /* max-width: 600px; */
+  flex: 1;
 }
 
 .user {
@@ -68,7 +75,7 @@ section:first-child {
 }
 
 .message-box > * {
-  width: 250px;
+  /* width: 250px; */
 }
 
 .message-box img:last-child {
@@ -93,9 +100,10 @@ section:first-child {
 }
 
 section:nth-child(2){
-  display: flex;
-  flex-direction: column;
-  width: 600px;
+  /* display: flex;
+  flex-direction: column; */
+  max-width: 600px;
+  margin: auto;
 }
 
 .pricing{
@@ -103,4 +111,20 @@ section:nth-child(2){
   border-radius: 8px;
   padding: 20px;
   color: grey;
+  background-color: beige;
+}
+
+.pricing span:nth-child(1){
+  font-weight: 700;
+  color: #000;
+  font-size: 34px;
+}
+
+.pricing button{
+  width: 100%;
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  border: none;
 }
