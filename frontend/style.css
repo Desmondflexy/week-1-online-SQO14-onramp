@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   /* padding: 0; */
-  /* margin: 10px; */
+  /* margin: 0px; */
   /* border: 1px solid blue; */
 }
 
@@ -94,6 +94,10 @@ section:nth-child(2)>div{
   font-size: 24px;
   display: inline-block;
   margin: 4px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
 }
 
 section>div>p{
@@ -130,6 +134,7 @@ section>div>p{
   border-radius: 4px;
   padding: 10px;
   border: none;
+  cursor: pointer;
 }
 
 .pricing button:hover{
@@ -147,5 +152,5 @@ section>div>p{
 }
 
 .pricing li{
-  list-style-image: url(green-tick.png);
+  list-style-image: url(green-tick-small.png);
 }
